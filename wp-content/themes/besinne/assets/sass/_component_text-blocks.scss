@@ -1,0 +1,22 @@
+.text-blocks {
+    padding-bottom: 60px;
+    color: $color-tint-3;
+
+    h2 {
+        text-align: center;
+    }
+
+    border-top: 5px solid $color-tint-1;
+    &--no-line {
+        border-top: none;
+    }
+
+}
+
+.c-text-block {
+    @extend .l-half;
+
+    h3 {
+        color: $color-tint-2;
+    }
+}

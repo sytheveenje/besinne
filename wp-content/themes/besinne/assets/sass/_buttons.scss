@@ -1,0 +1,16 @@
+.btn {
+    display: inline-block;
+    background-color: $color-tint-2;
+    border: none;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    -moz-border-radius: 8px;
+    -webkit-border-radius: 8px;
+    border-radius: 8px;
+    margin-top: 20px;
+    font-size: 18px;
+    &:hover {
+        background-color: darken($color-tint-2, 10%);
+    }
+}

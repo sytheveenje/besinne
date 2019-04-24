@@ -1,0 +1,59 @@
+.call-to-action {
+	background-color: $color-tint-1;
+	color: $color-tint-3;
+	text-align: center;
+
+	p {
+		max-width: 600px;
+		margin: 0px auto 20px auto;
+	}
+
+	input {
+		width: 100%;
+		padding: 20px;
+		max-width: 600px;
+		margin-bottom: 20px;
+	}
+
+	@media (min-width: $breakpoint-10) {
+		margin-top: -50px;
+	}
+
+	&:before {
+		background-color: white;
+		border-bottom: 16vw solid $color-tint-1;
+		border-right: 100vw solid transparent;
+		display: block;
+		clear: both;
+		content: " ";
+	}
+}
+
+.footer {
+	background-color: $color-tint-3;
+	color: white;
+	text-align: center;
+	padding-bottom: 20px;
+
+	li {
+		list-style-type: none;
+		display: inline;
+		margin: 0 20px;
+
+		a {
+			color: white;
+		}
+	}
+	
+	@media (min-width: $breakpoint-10) {
+	    padding-bottom: 0;
+	}
+
+	a {
+		color: white;
+		text-decoration: none;
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+}

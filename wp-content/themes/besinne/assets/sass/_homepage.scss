@@ -1,0 +1,118 @@
+.hero-text {
+	margin-top: 200px;
+	text-align: center;
+	color: $color-tint-3;
+
+	p {
+		max-width: 600px;
+		margin: 0px auto;
+	}
+}
+
+.process {
+	background-color: $color-tint-1;
+	color: $color-tint-3;
+
+	h1, h2, h3, h4 {
+		color: white;
+	}
+
+	margin-top: 100px;
+
+	&:before {
+		background-color: white;
+		border-bottom: 16vw solid $color-tint-1;
+		border-right: 100vw solid transparent;
+		display: block;
+		clear: both;
+		content: " ";
+	}
+
+	&:after {
+		background-color: $color-tint-1;
+		border-bottom: 16vw solid white;
+		border-left: 100vw solid transparent;
+		display: block;
+		clear: both;
+		content: " ";
+	}
+}
+
+.step {
+	position: relative;
+
+	.step-text {
+		opacity: 0;
+	}
+
+	&:after {
+		content: " ";
+		clear: both;
+		display: block;
+	}
+
+	.left, .right {
+		@extend .l-half;
+		padding: 30px 0px;
+	}
+
+	img {
+		max-width: 100%;
+	}
+	
+
+	@media (min-width: $breakpoint-10) {
+
+		min-height: 40vw;
+
+		.right {
+			margin-left: 44%;
+		}
+
+		.left, .right {
+			padding: 0px;
+			padding-top: 5vw;
+		}
+
+		.absolute-image {
+			position: absolute;
+			max-width: 40%;
+		}
+
+		.image-left {
+			@extend .absolute-image;
+			left: 0;
+		}
+
+		.image-right {
+			@extend .absolute-image;
+			right: 0;
+		}
+
+	}
+}
+
+.about {
+
+	text-align: center;
+	color: $color-tint-3;
+
+	p {
+		max-width: 600px;
+		margin: 0px auto 20px auto;
+	}
+
+	.profile-image {
+		max-width: 200px;
+		margin: 0px auto;
+
+		img {
+			max-width: 100%;
+		}
+	}
+
+	@media (min-width: $breakpoint-10) {
+		margin-top: -50px;
+	}
+
+}

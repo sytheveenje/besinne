@@ -1,0 +1,43 @@
+.topbar {
+	position: absolute;
+	width: 100%;
+	top: 0;
+
+	.logo {
+		position: absolute;
+		width: 100px;
+		margin: 0px auto;
+		left: 0;
+		right: 0;
+		text-align: center;
+		top: 70px;
+	}
+
+	.menu-button {
+		position: absolute;
+		top: 0;
+		right: 0;
+		width: 300px;
+		text-align: right;
+		border-top: 80px solid $color-tint-1;
+		border-left: 500px solid transparent;
+
+		&:hover {
+			cursor: pointer;
+		}
+
+		.icon {
+			position: absolute;
+			top: -70px;
+			right: 30px;
+			width: 30px;
+			height: 30px;
+			color: white;
+			font-size: 32px;
+			&:hover {
+				color: darken($color-tint-1, 10%);
+			}
+		}
+
+	}
+}

@@ -1,0 +1,60 @@
+.navigation {
+    display: none;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(254,188,0,0.9);
+    top: 0;
+    left: 0;
+    z-index: $z-index-20;
+
+    ul.main-nav {
+        width: 100%;
+        max-width: 600px;
+        text-align: center;
+        margin: 0 auto;
+        font-size: 2em;
+        line-height: 1.5em;
+
+        li {
+            list-style-type: none;
+
+            a {
+                color: white;
+                text-decoration: none;
+
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+
+    .menu-button {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 300px;
+        text-align: right;
+        border-top: 80px solid $color-tint-1;
+        border-left: 500px solid transparent;
+
+        &:hover {
+            cursor: pointer;
+        }
+
+        .icon {
+            position: absolute;
+            top: -70px;
+            right: 30px;
+            width: 30px;
+            height: 30px;
+            color: white;
+            font-size: 32px;
+            &:hover {
+                color: darken($color-tint-1, 10%);
+            }
+        }
+
+    }
+}
